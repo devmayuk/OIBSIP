@@ -1,4 +1,4 @@
-package MrMJ;
+package TASK1_ATM;
 
 import java.sql.*;
 import javax.swing.*;
@@ -11,8 +11,8 @@ public class Transactions extends JFrame implements ActionListener
     Transactions()
     {
         //frame head center
-        setFont(new Font("system",Font.BOLD,22));
-        //to get the head name of the frame we are doing this stuff
+        setFont(new Font("System",Font.BOLD,24));
+        //To get the head name of the frame
         Font f= getFont();
         FontMetrics fm= getFontMetrics(f);
         int x=fm.stringWidth("Transactions");
@@ -25,8 +25,8 @@ public class Transactions extends JFrame implements ActionListener
         //done
 
         //----------Label-------------------
-        l1=new JLabel("Please select your transaction ");
-        l1.setFont(new Font("System",Font.BOLD,24));
+        l1=new JLabel("Please select any of the following required action: ");
+        l1.setFont(new Font("System",Font.BOLD,26));
         l1.setBounds(130, 40, 500, 30);
         add(l1);
         //----------Label Done--------------
@@ -136,7 +136,7 @@ public class Transactions extends JFrame implements ActionListener
         if(ae.getSource()==b6)
         {
             String pinn=JOptionPane.showInputDialog("Enter PIN");
-            conn c1=new conn();
+            Contnn c1=new Contnn();
             try
             {
                 ResultSet rs=c1.s.executeQuery("select amount from bank ORDER BY pin = '"+pinn+"' DESC LIMIT 1");
