@@ -1,4 +1,4 @@
-package MrMJ;
+package TASK1_ATM;
 
 import java.sql.*;
 import java.awt.*;
@@ -17,7 +17,7 @@ public class Signup3 extends JFrame implements ActionListener
     Signup3()
     {
         //frame head center
-        setFont(new Font("system",Font.BOLD,22));
+        setFont(new Font("System",Font.BOLD,24));
         //to get the head name of the frame we are doing this stuff
         Font f= getFont();
         FontMetrics fm= getFontMetrics(f);
@@ -32,64 +32,64 @@ public class Signup3 extends JFrame implements ActionListener
 
         //labels-----------------------------------------------------
         l1=new JLabel("Page 3 : Account Details: ");
-        l1.setFont(new Font("Raleway",Font.BOLD,22));
+        l1.setFont(new Font("Avenir",Font.BOLD,24));
         l1.setBounds(280, 50, 400, 40);
         add(l1);
 
         l2=new JLabel("Account type: ");
-        l2.setFont(new Font("Raleway",Font.BOLD,18));
+        l2.setFont(new Font("Avenir",Font.BOLD,18));
         l2.setBounds(100, 140, 200, 30);
         add(l2);
 
         l3=new JLabel("Card no: ");
-        l3.setFont(new Font("Raleway",Font.BOLD,18));
+        l3.setFont(new Font("Avenir",Font.BOLD,18));
         l3.setBounds(100, 300, 200, 30);
         add(l3);
 
         l4=new JLabel("XXXX-XXXX-XXXX-4184");
-        l4.setFont(new Font("Raleway",Font.BOLD,18));
+        l4.setFont(new Font("Avenir",Font.BOLD,18));
         l4.setBounds(330, 300, 250, 30);
         add(l4);
 
         l5=new JLabel("Enter your 16-digit card no: ");
-        l5.setFont(new Font("Raleway",Font.BOLD,12));
+        l5.setFont(new Font("Avenir",Font.BOLD,12));
         l5.setBounds(100, 330, 200, 20);
         add(l5);
 
         l6=new JLabel("It would apper on ATM card /cheque book and statements ");
-        l6.setFont(new Font("Raleway",Font.BOLD,12));
+        l6.setFont(new Font("Avenir",Font.BOLD,12));
         l6.setBounds(330, 330, 500, 20);
         add(l6);
 
         l7=new JLabel("PIN: ");
-        l7.setFont(new Font("Raleway",Font.BOLD,18));
+        l7.setFont(new Font("Avenir",Font.BOLD,18));
         l7.setBounds(100, 370, 200, 30);
         add(l7);
 
         l8=new JLabel("XXXX");
-        l8.setFont(new Font("Raleway",Font.BOLD,18));
+        l8.setFont(new Font("Avenir",Font.BOLD,18));
         l8.setBounds(330, 370, 200, 30);
         add(l8);
 
         l9=new JLabel("(4-digit Password :)");
-        l9.setFont(new Font("Raleway",Font.BOLD,18));
+        l9.setFont(new Font("Avenir",Font.BOLD,18));
         l9.setBounds(100, 400, 200, 20);
         add(l9);
 
         l10=new JLabel("Services Required");
-        l10.setFont(new Font("Raleway",Font.BOLD,18));
+        l10.setFont(new Font("Avenir",Font.BOLD,18));
         l10.setBounds(100, 450, 200, 30);
         add(l10);
 
         l11=new JLabel("Form no: ");
-        l11.setFont(new Font("Raleway",Font.BOLD,14));
+        l11.setFont(new Font("Avenir",Font.BOLD,14));
         l11.setBounds(700, 10, 70, 30);
         add(l11);
         //----------------label done
 
         //------------Buttons-----------------------------------------------------
         b1=new JButton("Submit");
-        b1.setFont(new Font("Raleway",Font.BOLD,14));
+        b1.setFont(new Font("Avenir",Font.BOLD,14));
         b1.addActionListener(this);
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
@@ -97,7 +97,7 @@ public class Signup3 extends JFrame implements ActionListener
         add(b1);
 
         b2=new JButton("Cancel");
-        b2.setFont(new Font("Raleway",Font.BOLD,14));
+        b2.setFont(new Font("Avenir",Font.BOLD,14));
         b2.addActionListener(this);
         b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
@@ -106,7 +106,7 @@ public class Signup3 extends JFrame implements ActionListener
         //---------------------buttons done
 
         //-----------------CheckBoxes------------------------------------------
-        Font fnt1=new Font("Raleway",Font.BOLD,16);
+        Font fnt1=new Font("Avenir",Font.BOLD,16);
 
         c1=new JCheckBox("ATM Card");
         c1.setBackground(Color.WHITE);
@@ -146,7 +146,7 @@ public class Signup3 extends JFrame implements ActionListener
 
         c7=new JCheckBox("I agree to all terms* ",true);
         c7.setBackground(Color.WHITE);
-        c7.setFont(new Font("Raleway",Font.BOLD,12));
+        c7.setFont(new Font("Avenir",Font.BOLD,12));
         c7.setBounds(100,680,600,20);
         add(c7);
         //----------------Checkbox done
@@ -180,7 +180,7 @@ public class Signup3 extends JFrame implements ActionListener
 
         //-----------------TextField-----------------------
         t1=new JTextField();
-        t1.setFont(new Font("Raleway",Font.BOLD,12));
+        t1.setFont(new Font("Avenir",Font.BOLD,12));
         t1.setBounds(770, 10, 40, 30);
         add(t1);
         //------------------------TextField done
@@ -260,7 +260,7 @@ public class Signup3 extends JFrame implements ActionListener
                 }
                 else
                 {
-                    conn c1=new conn();
+                    Contnn c1=new Contnn();
                     String q1="insert into signup3(formno,atype,cardno,pin,facility) values('"+c+"','"+a+"','"+first8+"','"+first4+"','"+b+"')";
                     String q2="insert into login(formno,cardno,pin) values('"+c+"','"+first8+"','"+first4+"')";
                     String q3="insert into bank(pin,date,mode,amount) values('"+first4+"',null,null,'0')";
