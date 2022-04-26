@@ -12,7 +12,7 @@ public class FastCash extends JFrame implements ActionListener
     JTextField t1;
     FastCash()
     {
-        setFont(new Font("System",Font.BOLD,22));
+        setFont(new Font("System",Font.BOLD,24));
         Font f=getFont();
         FontMetrics fm=getFontMetrics(f);
         int x=fm.stringWidth("Fast Cash");
@@ -25,12 +25,12 @@ public class FastCash extends JFrame implements ActionListener
 
         //labels-------------
         l1=new JLabel("Select withdrwal amount: ");
-        l1.setFont(new Font("System",Font.BOLD,30));
+        l1.setFont(new Font("System",Font.BOLD,32));
         l1.setBounds(160,100,400,50);
         add(l1);
 
-        l2=new JLabel("Enter Pin :");
-        l2.setFont(new Font("System",Font.BOLD,16));
+        l2=new JLabel("Enter Pin: ");
+        l2.setFont(new Font("System",Font.BOLD,18));
         l2.setBounds(550, 10, 200, 40);
         add(l2);
 
@@ -38,14 +38,14 @@ public class FastCash extends JFrame implements ActionListener
 
         //tf------------------
         t1=new JTextField();
-        t1.setFont(new Font("System",Font.BOLD,16));
+        t1.setFont(new Font("System",Font.BOLD,18));
         t1.setBounds(650, 10, 100, 40);
         add(t1);
 
-        //done----------------------
+        //Done----------------------
 
-        //buttons---------------
-        Font bfont=new Font("System",Font.BOLD,18);
+        //Buttons---------------
+        Font bfont=new Font("System",Font.BOLD,22);
 
         b1=new JButton("Rs.100");
         b1.setFont(bfont);
@@ -71,7 +71,7 @@ public class FastCash extends JFrame implements ActionListener
         b3.setBounds(100,300,200,40);
         add(b3);
 
-        b4=new JButton("Rs.2000");
+        b4=new JButton("Rs.2500");
         b4.addActionListener(this);
         b4.setFont(bfont);
         b4.setBackground(Color.BLACK);
@@ -201,7 +201,7 @@ public class FastCash extends JFrame implements ActionListener
                     System.out.println("Balance :"+balance);
                     System.out.println("Pin: "+pin1);
                     double b1=Double.parseDouble(balance);
-                    double d=2000;
+                    double d=2500;
                     b1-=d;
                     String bal=Double.toString(b1);
                     String q1="update bank set amount='"+bal+"' where pin='"+pin1+"'";
@@ -232,7 +232,7 @@ public class FastCash extends JFrame implements ActionListener
             }
             if(ae.getSource()==b6)
             {
-                conn c1=new conn();
+                Contnn c1=new Contnn();
                 ResultSet rs=c1.s.executeQuery("select * from bank where pin='"+a+"' ");
                 if(rs.next())
                 {
