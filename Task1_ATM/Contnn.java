@@ -1,11 +1,11 @@
 package TASK1_ATM;
 
 import java.sql.*;
-public class Conctnn
+public class Contnn
 {
     public Connection c;
     public Statement s;
-    public Conctnn()
+    public Contnn()
     {
         try {
             Class.forName("com.mysql.jdbc.Driver");
