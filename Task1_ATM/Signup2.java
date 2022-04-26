@@ -1,4 +1,4 @@
-package MrMJ;
+package TASK1_ATM;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,8 +17,8 @@ public class Signup2 extends JFrame implements ActionListener
     Signup2()
     {
         //frame head center
-        setFont(new Font("system",Font.BOLD,22));
-        //to get the head name of the frame we are doing this stuff
+        setFont(new Font("System",Font.BOLD,24));
+        //To get the head name of the frame
         Font f= getFont();
         FontMetrics fm= getFontMetrics(f);
         int x=fm.stringWidth("New Account Application Form -Page 2");
@@ -32,69 +32,69 @@ public class Signup2 extends JFrame implements ActionListener
 
         //******Labels*******
         l1=new JLabel("Page 2: Additional Details ");
-        l1.setFont(new Font("Raleway",Font.BOLD,22));
+        l1.setFont(new Font("Avenir",Font.BOLD,24));
         l1.setBounds(280,30,600,40);
         add(l1);
 
         l2=new JLabel("Religion ");
-        l2.setFont(new Font("Raleway",Font.BOLD,18));
+        l2.setFont(new Font("Avenir",Font.BOLD,20));
         l2.setBounds(100,120,100,30);
         add(l2);
 
         l3=new JLabel("Category: ");
-        l3.setFont(new Font("Raleway",Font.BOLD,18));
+        l3.setFont(new Font("Avenir",Font.BOLD,18));
         l3.setBounds(100,170,100,30);
         add(l3);
 
         l4=new JLabel("Income : ");
-        l4.setFont(new Font("Raleway",Font.BOLD,18));
+        l4.setFont(new Font("Avenir",Font.BOLD,18));
         l4.setBounds(100,220,100,30);
         add(l4);
 
         l5=new JLabel("Educational ");
-        l5.setFont(new Font("Raleway",Font.BOLD,18));
+        l5.setFont(new Font("Avenir",Font.BOLD,18));
         l5.setBounds(100,270,150,30);
         add(l5);
 
         l11=new JLabel("Qualification : ");
-        l11.setFont(new Font("Raleway",Font.BOLD,18));
+        l11.setFont(new Font("Avenir",Font.BOLD,18));
         l11.setBounds(100,290,150,30);
         add(l11);
 
         l6=new JLabel("Occupation : ");
-        l6.setFont(new Font("Raleway",Font.BOLD,18));
+        l6.setFont(new Font("Avenir",Font.BOLD,18));
         l6.setBounds(100,340,150,30);
         add(l6);
 
         l7=new JLabel("PAN No. : ");
-        l7.setFont(new Font("Raleway",Font.BOLD,18));
+        l7.setFont(new Font("Avenir",Font.BOLD,18));
         l7.setBounds(100,390,150,30);
         add(l7);
 
         l8=new JLabel("Aadhar Card no: ");
-        l8.setFont(new Font("Raleway",Font.BOLD,18));
+        l8.setFont(new Font("Avenir",Font.BOLD,18));
         l8.setBounds(100,440,180,30);
         add(l8);
 
         l9=new JLabel("Senior Citizen : ");
-        l9.setFont(new Font("Raleway",Font.BOLD,18));
+        l9.setFont(new Font("Avenir",Font.BOLD,18));
         l9.setBounds(100,490,150,30);
         add(l9);
 
         l10=new JLabel("Existing Account : ");
-        l10.setFont(new Font("Raleway",Font.BOLD,18));
+        l10.setFont(new Font("Avenir",Font.BOLD,18));
         l10.setBounds(100,540,180,30);
         add(l10);
 
         l12=new JLabel("Form No : ");
-        l12.setFont(new Font("Raleway",Font.BOLD,13));
+        l12.setFont(new Font("Avenir",Font.BOLD,14));
         l12.setBounds(680,10,70,30);
         add(l12);
         //-----------------------------Label Done---------------------------------------------
 
         //******Buttons******
         b=new JButton("Next");
-        b.setFont(new Font("Raleway",Font.BOLD,14));
+        b.setFont(new Font("Avenir",Font.BOLD,16));
         b.addActionListener(this);
         b.setBackground(Color.BLACK);
         b.setForeground(Color.WHITE);
@@ -105,42 +105,42 @@ public class Signup2 extends JFrame implements ActionListener
 
         //*********TEXTFIELDS********
         t1=new JTextField();
-        t1.setFont(new Font("Raleway",Font.BOLD,13));
+        t1.setFont(new Font("Avenir",Font.BOLD,14));
         t1.setBounds(350,390,320,30);
         add(t1);
 
         t2=new JTextField();
-        t2.setFont(new Font("Raleway",Font.BOLD,13));
+        t2.setFont(new Font("Avenir",Font.BOLD,14));
         t2.setBounds(350,440,320,30);
         add(t2);
 
         t3=new JTextField();
-        t3.setFont(new Font("Raleway",Font.BOLD,13));
+        t3.setFont(new Font("Avenir",Font.BOLD,14));
         t3.setBounds(760,10,60,30);
         add(t3);
         //-----------------------------Tf done------------------------------------------------
 
         //*********Radio***************
         r1=new JRadioButton("Yes");
-        r1.setFont(new Font("Raleway",Font.BOLD,14));
+        r1.setFont(new Font("Avenir",Font.BOLD,14));
         r1.setBackground(Color.WHITE);
         r1.setBounds(350,490,100,30);
         add(r1);
 
         r2=new JRadioButton("No");
-        r2.setFont(new Font("Raleway",Font.BOLD,14));
+        r2.setFont(new Font("Avenir",Font.BOLD,16));
         r2.setBackground(Color.WHITE);
         r2.setBounds(460,490,100,30);
         add(r2);
 
         r3=new JRadioButton("Yes");
-        r3.setFont(new Font("Raleway",Font.BOLD,14));
+        r3.setFont(new Font("Avenir",Font.BOLD,16));
         r3.setBackground(Color.WHITE);
         r3.setBounds(350,540,100,30);
         add(r3);
 
         r4=new JRadioButton("No");
-        r4.setFont(new Font("Raleway",Font.BOLD,14));
+        r4.setFont(new Font("Avenir",Font.BOLD,16));
         r4.setBackground(Color.WHITE);
         r4.setBounds(460,540,100,30);
         add(r4);
@@ -149,35 +149,35 @@ public class Signup2 extends JFrame implements ActionListener
 
         String religion[]={"Hindu","Muslim","Sikh","Jain","Christian","Jew","Buddhist","Other"};
         c1=new JComboBox(religion);
-        c1.setFont(new Font("Raleway",Font.BOLD,14));
+        c1.setFont(new Font("Avenir",Font.BOLD,16));
         c1.setBackground(Color.WHITE);
         c1.setBounds(350,120,320,30);
         add(c1);
 
         String category[]={"General","OBC","SC","ST","NT","Other"};
         c2=new JComboBox(category);
-        c2.setFont(new Font("Raleway",Font.BOLD,14));
+        c2.setFont(new Font("Avenir",Font.BOLD,16));
         c2.setBackground(Color.WHITE);
         c2.setBounds(350,170,320,30);
         add(c2);
 
         String income[]={"0","<1 Lakh","< 5 Lakh","< 10 Lakh","<25 Lakh","<50 Lakh","<75 Lakh ","< 1 Cr"};
         c3=new JComboBox(income);
-        c3.setFont(new Font("Raleway",Font.BOLD,14));
+        c3.setFont(new Font("Avenir",Font.BOLD,16));
         c3.setBackground(Color.WHITE);
         c3.setBounds(350,220,320,30);
         add(c3);
 
         String education[]={"Non-Graduate","Bachelor","Master","PhD"};
         c4=new JComboBox(education);
-        c4.setFont(new Font("Raleway",Font.BOLD,14));
+        c4.setFont(new Font("Avenir",Font.BOLD,16));
         c4.setBackground(Color.WHITE);
         c4.setBounds(350,270,320,30);
         add(c4);
 
         String occupation[]={"Student","Businessman","Employee","Intern","Other"};
         c5=new JComboBox(occupation);
-        c5.setFont(new Font("Raleway",Font.BOLD,14));
+        c5.setFont(new Font("Avenir",Font.BOLD,16));
         c5.setBackground(Color.WHITE);
         c5.setBounds(350,340,320,30);
         add(c5);
@@ -242,7 +242,7 @@ public class Signup2 extends JFrame implements ActionListener
             }
             else
             {
-                conn c1=new conn();
+                Contnn c1=new Contnn();
                 String q1="insert into signup2(formno,religion,category,income,education,occupation,pan,aadhar,scitizen,eaccount) values('"+j+"','"+a+"','"+b+"','"+c+"','"+d+"','"+e+"','"+f+"','"+g+"','"+h+"','"+i+"')";
                 c1.s.executeUpdate(q1);
 
