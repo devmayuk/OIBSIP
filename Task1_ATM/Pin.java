@@ -100,24 +100,24 @@ public class Pin extends JFrame implements ActionListener
     {
         try
         {
-            String a=t1.getText() ;
-            String b=t2.getText();
-            String c=t3.getText();
+            String a= String.valueOf(t1.getPassword());
+            String b= String.valueOf(t2.getPassword());
+            String c=String.valueOf(t3.getPassword());
             if(ae.getSource() == b1)
             {
-                if(t1.getText().equals(""))
+                if(a.equals(""))
                 {
                     JOptionPane.showMessageDialog(null,"Please enter your current PIN");
                 }
-                if(t2.getText().equals(""))
+                if(b.equals(""))
                 {
                     JOptionPane.showMessageDialog(null,"Please enter your new PIN");
                 }
-                if(t3.getText().equals(""))
+                if(c.equals(""))
                 {
                     JOptionPane.showMessageDialog(null,"Please Re-enter your new PIN");
                 }
-                if(t2.getText().equals(t3.getText()))
+                if(b.equals(c))
                 {
                     Contnn c1=new Contnn();
                     String q1="update bank set pin='"+b+"' where pin='"+a+"' ";
