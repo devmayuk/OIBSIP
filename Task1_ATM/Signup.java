@@ -1,4 +1,4 @@
-package MrMJ;
+package TASK1_ATM;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,8 +21,8 @@ public class Signup extends JFrame implements ActionListener
     public Signup()
     {
         //frame head center
-        setFont(new Font("system",Font.BOLD,22));
-        //to get the head name of the frame we are doing this stuff
+        setFont(new Font("System",Font.BOLD,24));
+        //To get the head name of the frame
         Font f= getFont();
         FontMetrics fm= getFontMetrics(f);
         int x=fm.stringWidth("New Account Application Form");
@@ -35,94 +35,94 @@ public class Signup extends JFrame implements ActionListener
 
         //label setting
         l1=new JLabel("Application Form No: "+first);
-        l1.setFont(new Font("Raleway",Font.BOLD,38));
+        l1.setFont(new Font("Avenir",Font.BOLD,40));
 
         l2=new JLabel("Page1 : Personal Deatils");
-        l2.setFont(new Font("Raleway",Font.BOLD,22));
+        l2.setFont(new Font("Avenir",Font.BOLD,24));
 
         l3=new JLabel("Name : ");
-        l3.setFont(new Font("Raleway",Font.BOLD,20));
+        l3.setFont(new Font("Avenir",Font.BOLD,20));
 
         l4=new JLabel("Surname : ");
-        l4.setFont(new Font("Raleway",Font.BOLD,20));
+        l4.setFont(new Font("Avenir",Font.BOLD,20));
 
         l5=new JLabel("Date of Birth: ");
-        l5.setFont(new Font("Raleway",Font.BOLD,20));
+        l5.setFont(new Font("Avenir",Font.BOLD,20));
 
         l6=new JLabel("Gender: ");
-        l6.setFont(new Font("Raleway",Font.BOLD,20));
+        l6.setFont(new Font("Avenir",Font.BOLD,20));
 
         l7=new JLabel("Email Address: ");
-        l7.setFont(new Font("Raleway",Font.BOLD,20));
+        l7.setFont(new Font("Avenir",Font.BOLD,20));
 
         l8=new JLabel("Maritial Status : ");
-        l8.setFont(new Font("Raleway",Font.BOLD,20));
+        l8.setFont(new Font("Avenir",Font.BOLD,20));
 
         l9=new JLabel("Address : ");
-        l9.setFont(new Font("Raleway",Font.BOLD,20));
+        l9.setFont(new Font("Avenir",Font.BOLD,20));
 
         l10=new JLabel("City : ");
-        l10.setFont(new Font("Raleway",Font.BOLD,20));
+        l10.setFont(new Font("Avenir",Font.BOLD,20));
 
         l11=new JLabel("Pin Code : ");
-        l11.setFont(new Font("Raleway",Font.BOLD,20));
+        l11.setFont(new Font("Avenir",Font.BOLD,20));
 
         l12=new JLabel("State : ");
-        l12.setFont(new Font("Raleway",Font.BOLD,20));
+        l12.setFont(new Font("Avenir",Font.BOLD,20));
 
         l13=new JLabel("Date : ");
-        l13.setFont(new Font("Raleway",Font.BOLD,14));
+        l13.setFont(new Font("Avenir",Font.BOLD,20));
 
         l14=new JLabel("Month : ");
-        l14.setFont(new Font("Raleway",Font.BOLD,14));
+        l14.setFont(new Font("Avenir",Font.BOLD,20));
 
         l15=new JLabel("Year : ");
-        l15.setFont(new Font("Raleway",Font.BOLD,14));
+        l15.setFont(new Font("Avenir",Font.BOLD,20));
 
         t1=new JTextField();
-        t1.setFont(new Font("Raleway",Font.BOLD,14));
+        t1.setFont(new Font("Avenir",Font.BOLD,20));
 
         t2=new JTextField();
-        t2.setFont(new Font("Raleway",Font.BOLD,14));
+        t2.setFont(new Font("Avenir",Font.BOLD,20));
 
         t3=new JTextField();
-        t3.setFont(new Font("Raleway",Font.BOLD,14));
+        t3.setFont(new Font("Avenir",Font.BOLD,20));
 
         t4=new JTextField();
-        t4.setFont(new Font("Raleway",Font.BOLD,14));
+        t4.setFont(new Font("Avenir",Font.BOLD,20));
 
         t5=new JTextField();
-        t5.setFont(new Font("Raleway",Font.BOLD,14));
+        t5.setFont(new Font("Avenir",Font.BOLD,20));
 
         t6=new JTextField();
-        t6.setFont(new Font("Raleway",Font.BOLD,14));
+        t6.setFont(new Font("Avenir",Font.BOLD,20));
 
         t7=new JTextField();
-        t7.setFont(new Font("Raleway",Font.BOLD,14));
+        t7.setFont(new Font("Avenir",Font.BOLD,20));
 
         b=new JButton("Next ");
-        b.setFont(new Font("Raleway",Font.BOLD,14));
+        b.setFont(new Font("Avenir",Font.BOLD,20));
         b.setBackground(Color.BLACK);
         b.setForeground(Color.WHITE);
 
         r1=new JRadioButton("Male");
-        r1.setFont(new Font("Raleway",Font.BOLD,14));
+        r1.setFont(new Font("Avenir",Font.BOLD,20));
         r1.setBackground(Color.WHITE);
 
         r2=new JRadioButton("Female");
-        r2.setFont(new Font("Raleway",Font.BOLD,14));
+        r2.setFont(new Font("Avenir",Font.BOLD,20));
         r2.setBackground(Color.WHITE);
 
         r3=new JRadioButton("Married");
-        r3.setFont(new Font("Raleway",Font.BOLD,14));
+        r3.setFont(new Font("Avenir",Font.BOLD,20));
         r3.setBackground(Color.WHITE);
 
         r4=new JRadioButton("Unmarried");
-        r4.setFont(new Font("Raleway",Font.BOLD,14));
+        r4.setFont(new Font("Avenir",Font.BOLD,20));
         r4.setBackground(Color.WHITE);
 
         r5=new JRadioButton("Other");
-        r5.setFont(new Font("Raleway",Font.BOLD,14));
+        r5.setFont(new Font("Avenir",Font.BOLD,20));
         r5.setBackground(Color.WHITE);
 
         String date[]= {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"};
@@ -292,7 +292,7 @@ public class Signup extends JFrame implements ActionListener
         System.out.println("Year : "+cc);
         System.out.println("Gender : "+d);
         System.out.println("email: "+e);
-        System.out.println("Marritial : "+f);
+        System.out.println("Maritial : "+f);
         System.out.println("Address : "+g);
         System.out.println("City : "+h);
         System.out.println("Pincode : "+i);
@@ -306,7 +306,7 @@ public class Signup extends JFrame implements ActionListener
             }//if t6
             else
             {
-                conn c1=new conn();
+                Contnn c1=new Contnn();
                 //String q1="insert into signup values('"+a+"','"+b+"','"+ac+"','"+bc+"','"+cc+"','"+d+"','"+e+"','"+f+"','"+g+"','"+h+"','"+i+"','"+j+"','"+first+"')";
                 String q1="insert into signup(formno,name,fname,dob,gender,email,marital,address,city,pincode,state) values('"+first+"','"+a+"','"+b+"','"+ac+"','"+d+"','"+e+"','"+f+"','"+g+"','"+h+"','"+i+"','"+j+"')";
                 c1.s.executeUpdate(q1);
