@@ -1,4 +1,4 @@
-package MrMJ;
+package TASK1_ATM;
 
 import java.sql.*;
 import javax.swing.*;
@@ -12,8 +12,8 @@ public class Withdrawl extends JFrame implements ActionListener
     Withdrawl()
     {
         //frame head center
-        setFont(new Font("system",Font.BOLD,22));
-        //to get the head name of the frame we are doing this stuff
+        setFont(new Font("System",Font.BOLD,24));
+        //To get the head name of the frame
         Font f= getFont();
         FontMetrics fm= getFontMetrics(f);
         int x=fm.stringWidth("Withdrawl");
@@ -31,7 +31,7 @@ public class Withdrawl extends JFrame implements ActionListener
         l1.setBounds(300,170,280,20);
         add(l1);
 
-        l2=new JLabel("IS Rs.10000");
+        l2=new JLabel("IS Rs.25000");
         l2.setFont(lfont);
         l2.setBounds(380, 200, 800, 60);
         add(l2);
@@ -111,7 +111,7 @@ public class Withdrawl extends JFrame implements ActionListener
                 }
                 else
                 {
-                    conn c1=new conn();
+                    Contnn c1=new Contnn();
                     ResultSet rs=c1.s.executeQuery("select * from bank where pin='"+b+"' ");
                     String balance;
                     if(rs.next())
