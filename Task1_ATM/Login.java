@@ -1,4 +1,4 @@
-package MrMJ;
+package TASK1_ATM;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -13,8 +13,8 @@ public class Login extends JFrame implements ActionListener
 
     Login()
     {
-        setFont(new Font("serif",Font.BOLD,22));
-        //to get the head name of the frame we are doing this stuff
+        setFont(new Font("serif",Font.BOLD,24));
+        //To get the head name of the frame
         Font f= getFont();
         FontMetrics fm= getFontMetrics(f);
         int x=fm.stringWidth("Automated Teller Machine");
@@ -33,26 +33,26 @@ public class Login extends JFrame implements ActionListener
         add(l1);
 
         l2=new JLabel("Card no: ");
-        l2.setFont(new Font("Raleway",Font.BOLD,28));
+        l2.setFont(new Font("Raleway",Font.BOLD,30;
         l2.setBounds(	125,150,375,200);
         add(l2);
 
         l3=new JLabel("PIN: ");
-        l3.setFont(new Font("Raleway",Font.BOLD,28));
+        l3.setFont(new Font("Raleway",Font.BOLD,30);
         l3.setBounds(125,225,375,200);
         add(l3);
         //done-----------------------
 
         //tf-------------------------
         tf1=new JTextField(15);
-        tf1.setFont(new Font("Arial",Font.BOLD,14));
+        tf1.setFont(new Font("Arial",Font.BOLD,16);
         tf1.setBounds(300,235,230,30);
         add(tf1);
         //done-----------------------
 
         //pf-----------------------
         pf2= new JPasswordField();
-        pf2.setFont(new Font("Arial",Font.BOLD,14));
+        pf2.setFont(new Font("Arial",Font.BOLD,16);
         pf2.setBounds(300,310,230,30);
         add(pf2);
         //done-----------------------
@@ -61,7 +61,7 @@ public class Login extends JFrame implements ActionListener
         b1=new JButton("Sign in");
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
-        b1.setFont(new Font("Arial",Font.BOLD,14));
+        b1.setFont(new Font("Arial",Font.BOLD,16);
         b1.setBounds(300,400,100,30);
         add(b1);
         b1.addActionListener(this);
@@ -69,7 +69,7 @@ public class Login extends JFrame implements ActionListener
         b2=new JButton("Clear");
         b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
-        b2.setFont(new Font("Arial",Font.BOLD,14));
+        b2.setFont(new Font("Arial",Font.BOLD,16);
         b2.setBounds(430,400,100,30);
         add(b2);
         //b2.addActionListener(this);
@@ -77,7 +77,7 @@ public class Login extends JFrame implements ActionListener
         b3=new JButton("Sign up");
         b3.setBackground(Color.BLACK);
         b3.setForeground(Color.WHITE);
-        b3.setFont(new Font("Arial",Font.BOLD,14));
+        b3.setFont(new Font("Arial",Font.BOLD,16);
         b3.setBounds(300,450,230,30);
         add(b3);
         b3.addActionListener(this);
@@ -93,7 +93,7 @@ public class Login extends JFrame implements ActionListener
     {
         try
         {
-            conn c1=new conn();
+            Contnn c1=new Contnn();
             String a=tf1.getText();
             String b=pf2.getText();
             String q="select * from login where cardno= '"+a+"' and pin='"+b+"'";
@@ -108,7 +108,7 @@ public class Login extends JFrame implements ActionListener
                 }
                 else
                 {
-                    JOptionPane.showMessageDialog(null,"Incorrect card no. or password");
+                    JOptionPane.showMessageDialog(null,"Incorrect Credentials");
                 }
             }//if 1
             else if(ae.getSource() ==b2)
@@ -127,8 +127,5 @@ public class Login extends JFrame implements ActionListener
             System.out.println(e);
         }
     }
-    public static void main(String[] args)
-    {
-        new Login();
-    }
+    public static void main(String[] args) { new Login();}
 }
