@@ -25,8 +25,8 @@ public class Deposit extends JFrame implements ActionListener
         //done
 
         //labels-------------------
-        Font lfont=new Font("System",Font.BOLD,24);
-        l1=new JLabel("Enter amount you want");
+        Font lfont=new Font("System",Font.BOLD,28);
+        l1=new JLabel("Enter the amount");
         l1.setFont(lfont);
         l1.setBounds(240, 150, 800, 60);
         add(l1);
@@ -44,22 +44,22 @@ public class Deposit extends JFrame implements ActionListener
 
         //tf-----------------
 
-        Font tfont=new Font("Raleway",Font.BOLD,18);
+        Font tfont=new Font("Avenir",Font.BOLD,20);
         t1=new JTextField();
-        t1.setFont(new Font("Raleway",Font.BOLD,18));
+        t1.setFont(new Font("Avenir",Font.BOLD,20));
         t1.setBounds(250, 300, 300, 50);
         add(t1);
 
         JPasswordField t2=new JPasswordField();
-        t2.setFont(new Font("System",Font.BOLD,20));
+        t2.setFont(new Font("System",Font.BOLD,22));
         t2.setBounds(620, 10, 140, 30);
         add(t2);
 
-        //done---------------------
+        //Done---------------------
 
         //Button--------------------
         b1=new JButton("Deposit");
-        b1.setFont(new Font("System",Font.BOLD,18));
+        b1.setFont(new Font("System",Font.BOLD,20));
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
         b1.setBounds(260, 380, 125, 50);
@@ -67,7 +67,7 @@ public class Deposit extends JFrame implements ActionListener
         b1.addActionListener(this);
 
         b2=new JButton("Back");
-        b2.setFont(new Font("System",Font.BOLD,18));
+        b2.setFont(new Font("System",Font.BOLD,20));
         b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
         b2.setBounds(415, 380, 125, 50);
@@ -75,7 +75,7 @@ public class Deposit extends JFrame implements ActionListener
         b2.addActionListener(this);
 
         b3=new JButton("Exit");
-        b3.setFont(new Font("System",Font.BOLD,18));
+        b3.setFont(new Font("System",Font.BOLD,20));
         b3.setBackground(Color.BLACK);
         b3.setForeground(Color.WHITE);
         b3.setBounds(300,550,200,50);
@@ -105,7 +105,7 @@ public class Deposit extends JFrame implements ActionListener
                 }
                 else
                 {
-                    conn c1=new conn();
+                    Contnn c1=new Contnn();
                     ResultSet rs=c1.s.executeQuery("select * from bank where pin='"+b+"' ");
                     String balance;
                     if(rs.next())
